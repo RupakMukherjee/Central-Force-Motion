@@ -35,16 +35,15 @@ integer n,i
  
   yp(1) = y(2)
 ! yp(2) = -y(1) ! SHM
-
-f = c*(1.0d0+1.0d0/y(1))*dexp(-1.0d0/y(1))
   
 if (dabs(y(1)) .le. 6.0d-1) then                  ! Avoiding the numerical singularity
   f = 0.0d0
-  yp(2) = -y(1) - f
 else
-  yp(2) = -y(1) - c*(1.0d0+1.0d0/y(1))*dexp(-1.0d0/y(1))
+  f = c * (1.0d0 + 1.0d0 / y(1)) * dexp(-1.0d0 / y(1))
 endif
 
+  yp(2) = -y(1) - f
+  
   return
 end 
 
