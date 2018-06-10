@@ -9,7 +9,7 @@ open(unit=20,file='Phase.dat',status='unknown')
 n = 2
 x(1) = 1.0d0
 x(2) = 0.0d0
-y(1) = 0.30d0 
+y(1) = 0.30d0 ! 0.50d0
 y(2) = 0.0d0 
 z(1) = 0.0d0
 z(2) = 0.0d0
