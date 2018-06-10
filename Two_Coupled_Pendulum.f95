@@ -1,7 +1,7 @@
 program pendulum 
 implicit none
 integer n,i
-real*8 x,y(2),yp(2),z(2),zp(2),xst,xmax,h,Error
+real*8 x,y(2),yp(2),z(2),zp(2),xst,xmax,h
 
 open(unit=10,file='Time_Evolution.dat',status='unknown')
 open(unit=20,file='Phase.dat',status='unknown')
