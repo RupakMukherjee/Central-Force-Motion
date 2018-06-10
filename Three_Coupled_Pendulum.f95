@@ -23,7 +23,6 @@ do t=tst,tmax,h
   call rk4(t,h,x,xp,y,yp,z,zp,n)
   
   !write(10,*) t+h,(x(i),i=1,n),(y(i),i=1,n),(z(i),i=1,n)
-  !write(20,*) y(1)*dcos(x+h), y(1)*dsin(x+h)
    write(10,*) t+h,x(1),y(1),z(1)
    write(20,*) x(1)*dcos(t+h),x(1)*dsin(t+h),y(1)*dcos(t+h),y(1)*dsin(t+h),z(1)*dcos(t+h),z(1)*dsin(t+h)
    
